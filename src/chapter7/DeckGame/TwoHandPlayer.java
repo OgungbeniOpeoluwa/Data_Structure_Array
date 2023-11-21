@@ -15,7 +15,7 @@ public class TwoHandPlayer {
 
 
 
-    private static int returnIndexOfTrue(boolean [] result){
+    public static int returnIndexOfTrue(boolean [] result){
         int counts = 10;
         for(int count = 0; count < result.length; count++){
             if(result[count]){

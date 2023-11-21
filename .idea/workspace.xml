@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="63b2e2c5-2f0d-47cb-b7e8-6c0a9a0df23c" name="Changes" comment="" />
+    <list default="true" id="63b2e2c5-2f0d-47cb-b7e8-6c0a9a0df23c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/chapter7/DeckGame/DealerAndPlayerCheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter7/DeckGame/DealerAndPlayerHand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter7/DeckGame/DealerShuffleMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arrays_Data_Structure.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Arrays_Data_Structure.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chapter7/DeckGame/DealerShuffle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chapter7/DeckGame/DealerShuffle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chapter7/DeckGame/TwoHandPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chapter7/DeckGame/TwoHandPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/chapter7/DeckGame/DealerShuffleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/chapter7/DeckGame/DealerShuffleTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -16,14 +36,95 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dell/IdeaProjects/Arrays_Data_Structure/test&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Dell\IdeaProjects\Arrays_Data_Structure\test" />
+      <recent name="C:\Users\Dell\IdeaProjects\Arrays_Data_Structure\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.DealerAndPlayerHand">
+    <configuration name="DealerAndPlayerHand" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chapter7.DeckGame.DealerAndPlayerHand" />
+      <module name="Arrays_Data_Structure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chapter7.DeckGame.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DealerShuffleMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chapter7.DeckGame.DealerShuffleMain" />
+      <module name="Arrays_Data_Structure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chapter7.DeckGame.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TortiseAndTheHareMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chapter7.TortiseAndTheHareMain" />
+      <module name="Arrays_Data_Structure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chapter7.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DealerShuffleTest.testThatDealerChangeOriginalHandOfGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Arrays_Data_Structure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chapter7.DeckGame.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="chapter7.DeckGame" />
+      <option name="MAIN_CLASS_NAME" value="chapter7.DeckGame.DealerShuffleTest" />
+      <option name="METHOD_NAME" value="testThatDealerChangeOriginalHandOfGame" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DealerAndPlayerHand" />
+        <item itemvalue="JUnit.DealerShuffleTest.testThatDealerChangeOriginalHandOfGame" />
+        <item itemvalue="Application.DealerShuffleMain" />
+        <item itemvalue="Application.TortiseAndTheHareMain" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -32,8 +133,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700432216023</updated>
-      <workItem from="1700432217839" duration="6000" />
+      <workItem from="1700432217839" duration="1891000" />
+      <workItem from="1700446249922" duration="2387000" />
+      <workItem from="1700535177622" duration="3367000" />
+      <workItem from="1700553752436" duration="5084000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/chapter7/DeckGame/DealerAndPlayerHand.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

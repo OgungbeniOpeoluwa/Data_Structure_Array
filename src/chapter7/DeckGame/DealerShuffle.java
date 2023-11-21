@@ -1,49 +1,73 @@
 package chapter7.DeckGame;
 
 import java.security.SecureRandom;
-import java.util.ArrayDeque;
-import java.util.Arrays;
-import java.util.Queue;
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.LinkedBlockingQueue;
+import java.util.Scanner;
 
 public class DealerShuffle {
-    final static int gameRule = 21;
-
-    public static int changeDealerHand(Card[] card) {
+    public Card [] changeCard( Card[] card,int [] numbers) {
         DeckOfCard deckOfCard = new DeckOfCard();
-        int total = 0;
-        int [] result = deckOfCard.sortFaceValueToNumbers(card);
-        for(int numb : result){
-            total += numb;
-        }
-        return total;
-
-    }
-
-    public static Card [] changeCard( Card[] card,int [] numbers) {
-        DeckOfCard deckOfCard = new DeckOfCard();
-        boolean[] result = TwoHandPlayer.checkForElegibility(card);
-        System.out.println(Arrays.toString(result));
-        if (!(result[0])) {
+        deckOfCard.shuffle();
             for (int count : numbers) {
                 card[count] = deckOfCard.dealCard();
             }
-        }
-        result = TwoHandPlayer.checkForElegibility(card);
-        if (!result[0]){
-
-        }
         return card;
     }
 
-    public static void main(String[] args) {
-        Queue <Integer> name = new ArrayBlockingQueue<>(3);
-        System.out.println(name.add(34));
-        name.add(34);
-        name.add(34);
-        System.out.println(name.add(56));
-        System.out.println(name);
-        System.out.println(name.size());
+    public  void  card (int number){
+        switch(number) {
+            case 0 -> System.out.println("FOUR OF A KIND");
+            case 1 -> System.out.println("FULL HOUSE");
+            case 2 -> System.out.println("FLUSH");
+            case 3 -> System.out.println("STRAIGHT");
+            case 4 -> System.out.println("THREE OF A KIND ");
+            case 5 -> System.out.println("TWO KIND");
+            case 6 -> System.out.println("A PAIR");
+        }
+
+        }
+
+        public  int checkCards(Card[] card){
+            boolean [] result= TwoHandPlayer.checkForElegibility(card);
+            return TwoHandPlayer.returnIndexOfTrue(result);
     }
-}
+    public int returnResponse(){
+        Scanner scanner = new Scanner(System.in);
+        int result = 0;
+        System.out.println("Will like to change your card: ");
+        String input = scanner.next();
+        if(input.equalsIgnoreCase("Yes")){
+            System.out.println("How many cards are you swapping ");
+            result = scanner.nextInt();
+        }
+        return result;
+    }
+    public int[] arrayOfIndexOfCardToChange(int number){
+        Scanner scanner = new Scanner(System.in);
+        int [] cardIndex = new int[number];
+        for(int count = 0; count < number ; count++){
+            System.out.println("Enter Card Index :");
+            cardIndex[count] = scanner.nextInt();
+        }
+        return cardIndex;
+    }
+
+    public int[] arrayOfIndexOfCardToChangeForDealer(int number){
+        SecureRandom random = new SecureRandom();
+        int [] cardIndex = new int[number];
+        for(int count = 0; count < number ; count++){
+            int result = random.nextInt(0,5);
+            cardIndex[count] = result;
+        }
+        return cardIndex;
+    }
+
+    public  void checkHand(Card [] dealer, Card [] player){
+         TwoHandPlayer.determineHandThatIsBetter(dealer,player);
+
+    }
+    }
+
+
+
+
+
