@@ -7,7 +7,9 @@ public class PlayerMain {
         Players [] plays = {new Players(),new Players()};
         Card [] player = new Card[5];
         Card [] player2 = new Card[5];
+        plays[0].setName("delighted");
         plays[0].play();
+        plays[1].setName("Tobi");
         plays[1].play();
         for(int count = 0; count < 5 ; count++){
             player[count] = plays[0].deckOfCard.dealCard();
@@ -15,7 +17,7 @@ public class PlayerMain {
         }
         System.out.println("PLayer 1 Cards " + Arrays.toString(player));
         System.out.println("PLayer 2 Cards " + Arrays.toString(player2));
-        System.out.println(TwoHandPlayer.determineHandThatIsBetter(player,player2));
+        System.out.println(TwoHandPlayer.determineHandThatIsBetter(player,player2,plays[0].getName(),plays[1].getName()));
 
 
 

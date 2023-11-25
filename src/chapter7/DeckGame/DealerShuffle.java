@@ -15,13 +15,13 @@ public class DealerShuffle {
 
     public  void  card (int number){
         switch(number) {
-            case 0 -> System.out.println("FOUR OF A KIND");
-            case 1 -> System.out.println("FULL HOUSE");
-            case 2 -> System.out.println("FLUSH");
-            case 3 -> System.out.println("STRAIGHT");
-            case 4 -> System.out.println("THREE OF A KIND ");
-            case 5 -> System.out.println("TWO KIND");
-            case 6 -> System.out.println("A PAIR");
+            case 0 -> System.out.print("FOUR OF A KIND");
+            case 1 -> System.out.print("FULL HOUSE");
+            case 2 -> System.out.print("FLUSH");
+            case 3 -> System.out.print("STRAIGHT");
+            case 4 -> System.out.print("THREE OF A KIND ");
+            case 5 -> System.out.print("TWO KIND");
+            case 6 -> System.out.print("A PAIR");
         }
 
         }
@@ -61,10 +61,6 @@ public class DealerShuffle {
         return cardIndex;
     }
 
-    public  void checkHand(Card [] dealer, Card [] player){
-         TwoHandPlayer.determineHandThatIsBetter(dealer,player);
-
-    }
     }
 
 

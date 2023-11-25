@@ -5,12 +5,12 @@ import java.util.Arrays;
 
 public class TwoHandPlayer {
 
-    public  static  String determineHandThatIsBetter(Card [] player1,Card [] player2) {
+    public  static  String determineHandThatIsBetter(Card [] player1,Card [] player2,String name1, String name) {
        int playerOne = returnIndexOfTrue(checkForElegibility(player1));
         int playerTwo = returnIndexOfTrue(checkForElegibility(player2));
-        if(playerOne < playerTwo)return "player 1 won";
+        if(playerOne < playerTwo)return name1 + " 1 won";
         else if(playerOne == playerTwo)return "It is a tie";
-        else return "Player 2 won";
+        else return name + " 2 won";
     }
 
 

@@ -31,7 +31,7 @@ class TwoHandPlayerTest {
         player2[3] = new Card(FaceCard.FIVE , Suites.HEART);
         player2[4] = new Card(FaceCard.FOUR , Suites.HEART);
         String result = "player 1 won";
-        assertEquals(result,TwoHandPlayer.determineHandThatIsBetter(player1,player2));
+        assertEquals(result,TwoHandPlayer.determineHandThatIsBetter(player1,player2,"ope","Ayo"));
     }
 
     @Test
@@ -49,7 +49,7 @@ class TwoHandPlayerTest {
         player2[3] = new Card(FaceCard.ACE , Suites.HEART);
         player2[4] = new Card(FaceCard.QUEEN , Suites.HEART);
         String result = "It is a tie";
-        assertEquals(result,TwoHandPlayer.determineHandThatIsBetter(player1,player2));
+        assertEquals(result,TwoHandPlayer.determineHandThatIsBetter(player1,player2,"Delighted","Tobi"));
     }
 
 

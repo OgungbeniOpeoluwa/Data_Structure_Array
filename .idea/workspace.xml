@@ -5,15 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63b2e2c5-2f0d-47cb-b7e8-6c0a9a0df23c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/chapter7/DeckGame/DealerAndPlayerCheck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chapter7/DeckGame/DealerAndPlayerHand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chapter7/DeckGame/DealerShuffleMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter7/PixelQuantization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter7/functions/ChangeElementValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter7/turtle/Directions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter7/turtle/Pen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter7/turtle/Position.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter7/turtle/Turtle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/chapter7/PixelQuantizationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/chapter7/TurtleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/chapter7/functions/ChangeElementValueTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Arrays_Data_Structure.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Arrays_Data_Structure.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chapter7/DeckGame/DealerAndPlayerCheck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chapter7/DeckGame/DealerAndPlayerHand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chapter7/DeckGame/DealerAndPlayerHand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/chapter7/DeckGame/DealerShuffle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chapter7/DeckGame/DealerShuffle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chapter7/DeckGame/PlayerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chapter7/DeckGame/PlayerMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/chapter7/DeckGame/TwoHandPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chapter7/DeckGame/TwoHandPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/chapter7/DeckGame/DealerShuffleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/chapter7/DeckGame/DealerShuffleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/chapter7/DeckGame/TwoHandPlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/chapter7/DeckGame/TwoHandPlayerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +32,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -36,59 +47,105 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dell/IdeaProjects/Arrays_Data_Structure/test&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "true",
+    "Repository.Attach.JavaDocs": "true",
+    "Repository.Attach.Sources": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "C:/Users/Dell/IdeaProjects/Arrays_Data_Structure/test",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Dell\IdeaProjects\Arrays_Data_Structure\test" />
       <recent name="C:\Users\Dell\IdeaProjects\Arrays_Data_Structure\src" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="chapter7.functions" />
+      <recent name="chapter7" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.DealerAndPlayerHand">
-    <configuration name="DealerAndPlayerHand" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chapter7.DeckGame.DealerAndPlayerHand" />
+  <component name="RunManager" selected="JUnit.ChangeElementValueTest.testForTenBestValueScores">
+    <configuration name="ChangeElementValueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Arrays_Data_Structure" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chapter7.DeckGame.*" />
+          <option name="PATTERN" value="chapter7.functions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="chapter7.functions" />
+      <option name="MAIN_CLASS_NAME" value="chapter7.functions.ChangeElementValueTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DealerShuffleMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chapter7.DeckGame.DealerShuffleMain" />
+    <configuration name="ChangeElementValueTest.testForTenBestValueScores" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Arrays_Data_Structure" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chapter7.DeckGame.*" />
+          <option name="PATTERN" value="chapter7.functions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="chapter7.functions" />
+      <option name="MAIN_CLASS_NAME" value="chapter7.functions.ChangeElementValueTest" />
+      <option name="METHOD_NAME" value="testForTenBestValueScores" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TortiseAndTheHareMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chapter7.TortiseAndTheHareMain" />
+    <configuration name="ChangeElementValueTest.testThatElementAtIndex10_20ToZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Arrays_Data_Structure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chapter7.functions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="chapter7.functions" />
+      <option name="MAIN_CLASS_NAME" value="chapter7.functions.ChangeElementValueTest" />
+      <option name="METHOD_NAME" value="testThatElementAtIndex10_20ToZero" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChangeElementValueTest.testThatMultiplyEachOfTheElement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Arrays_Data_Structure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chapter7.functions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="chapter7.functions" />
+      <option name="MAIN_CLASS_NAME" value="chapter7.functions.ChangeElementValueTest" />
+      <option name="METHOD_NAME" value="testThatMultiplyEachOfTheElement" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PixelQuantizationTest.testThatValuesAsBeQuatize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Arrays_Data_Structure" />
       <extension name="coverage">
         <pattern>
@@ -96,21 +153,9 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DealerShuffleTest.testThatDealerChangeOriginalHandOfGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Arrays_Data_Structure" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="chapter7.DeckGame.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="chapter7.DeckGame" />
-      <option name="MAIN_CLASS_NAME" value="chapter7.DeckGame.DealerShuffleTest" />
-      <option name="METHOD_NAME" value="testThatDealerChangeOriginalHandOfGame" />
+      <option name="PACKAGE_NAME" value="chapter7" />
+      <option name="MAIN_CLASS_NAME" value="chapter7.PixelQuantizationTest" />
+      <option name="METHOD_NAME" value="testThatValuesAsBeQuatize" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -118,10 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DealerAndPlayerHand" />
-        <item itemvalue="JUnit.DealerShuffleTest.testThatDealerChangeOriginalHandOfGame" />
-        <item itemvalue="Application.DealerShuffleMain" />
-        <item itemvalue="Application.TortiseAndTheHareMain" />
+        <item itemvalue="JUnit.ChangeElementValueTest.testForTenBestValueScores" />
+        <item itemvalue="JUnit.ChangeElementValueTest.testThatElementAtIndex10_20ToZero" />
+        <item itemvalue="JUnit.ChangeElementValueTest.testThatMultiplyEachOfTheElement" />
+        <item itemvalue="JUnit.ChangeElementValueTest" />
+        <item itemvalue="JUnit.PixelQuantizationTest.testThatValuesAsBeQuatize" />
       </list>
     </recent_temporary>
   </component>
@@ -136,7 +182,9 @@
       <workItem from="1700432217839" duration="1891000" />
       <workItem from="1700446249922" duration="2387000" />
       <workItem from="1700535177622" duration="3367000" />
-      <workItem from="1700553752436" duration="5084000" />
+      <workItem from="1700553752436" duration="12212000" />
+      <workItem from="1700702401110" duration="592000" />
+      <workItem from="1700788896653" duration="29223000" />
     </task>
     <servers />
   </component>
@@ -147,9 +195,28 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/chapter7/DeckGame/DealerAndPlayerHand.java</url>
-          <line>7</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/src/chapter7/DeckGame/TwoHandPlayer.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/chapter7/KnightTourMain.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/chapter7/functions/ChangeElementValueTest.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/chapter7/KnightTourMain.java</url>
+          <line>80</line>
+          <properties class="chapter7.KnightTourMain" method="getBoardMove">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
